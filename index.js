@@ -1,4 +1,6 @@
-(function DblTap(Hammer) {
+import 'hammerjs';
+
+function DblTap(Hammer) {
   if (typeof Hammer === 'undefined') {
     throw new Error('Hammer isn\'t defined.');
   }
@@ -101,4 +103,6 @@
   Hammer.assign(Hammer, {
     DblTap: DblTapRecognizer
   });
-})(window.Hammer);
+}
+
+export default DblTap(Hammer);
