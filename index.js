@@ -105,4 +105,4 @@ function DblTap(Hammer) {
   });
 }
 
-export DblTap;
+export { DblTap };
