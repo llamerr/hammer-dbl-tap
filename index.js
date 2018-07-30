@@ -1,6 +1,4 @@
-import 'hammerjs';
-
-function DblTap(Hammer) {
+export default function DblTap(Hammer) {
   if (typeof Hammer === 'undefined') {
     throw new Error('Hammer isn\'t defined.');
   }
@@ -104,5 +102,3 @@ function DblTap(Hammer) {
     DblTap: DblTapRecognizer
   });
 }
-
-export { DblTap };
